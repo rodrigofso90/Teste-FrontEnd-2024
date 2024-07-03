@@ -7,27 +7,43 @@
 
 :root {
     --color-primary: #ffffff;
-    --color-secondary: #7784fd;
-    --color-tree: #8b0f32;
-    --color-black: #000;
-    --color-white: #fff;
+    --color-secondary: rgb(144, 202, 249);
+    --color-tree: rgb(255, 255, 255, .25);
+    --color-black: #000000;
+    --color-white: rgb(255, 255, 255);
 }
 
 body{
     background-color: var(--color-primary);
 }
 
+/* Menu lateral */
+
 nav.menu-lateral{
-    width: 300px;
+    width: 90px;
     height: 100vh;
-    background-color:var(--color-tree);
+    background-color:var(--color-secondary);
     padding: 40px 0px 40px 1%;
+    /* box-shadow: 3px 0 0 var(--color-secondary); */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+    padding-left: 10px;
+
 }
 
 .btn-expandir{
     width: 100%;
-    padding-left: 10px;
+    padding-left: 5px;
 }
+
 
 .btn-expandir > i{
     color: var(--color-white);
@@ -41,11 +57,11 @@ ul{
 }
 
 ul li.item-menu{
-    transition: 2s;
+    transition: .2s;
 }
 
 ul li.item-menu:hover{
-    background: var(--color-secondary);
+    background: var(--color-tree);
 }
 
 ul li.item-menu a{
@@ -64,5 +80,8 @@ ul li.item-menu a .txt-link{
 
 ul li.item-menu a .icon > i{
     font-size: 30px;
+    padding-left: 0px;
+    
 }
+
 
