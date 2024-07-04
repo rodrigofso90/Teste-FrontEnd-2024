@@ -18,8 +18,8 @@
                 <h1>Bem vindo ao Videos ICasei!</h1>
             </div>
             <div class="divBusca">
-                <input type="text" class="txtBusca" placeholder="Buscar..."/>
-                <i class="bi bi-search icon-search"></i>
+                <input type="text" name="searchString" id="searchString" class="txtBusca" placeholder="Buscar..."/>
+                <i class="bi bi-search icon-search" value="Pesquisar" onclick="pesquisar()"></i>
             </div>
         </nav>
     </header>
@@ -44,7 +44,16 @@
             </ul>
         </nav>
     </section>
-
+    <section>
+        <div>
+            <img id="imgVideo1" src="" alt="Video">
+            <p id="texto1"></p>
+        </div>
+        <div>
+            <img id="imgVideo2" src="" alt="Video">
+            <p id="texto2"></p>
+        </div>
+    </section>
     <footer>
         <script src="./JavaScript/script.js"></script>
     </footer>
