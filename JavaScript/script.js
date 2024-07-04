@@ -9,7 +9,7 @@ app.get("/searchVideos", function(req,response){
 
     const youtube = google.youtube({
         version: 'v3',
-    auth: 'AIzaSyBNOeVRPnqFKhrxOBiZOt5F01jCJEx9d_c'
+    auth: 'key=API_KEY'
     });
     
     let searchString = req.query.searchString;
